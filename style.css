@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital@1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Merriweather:ital@1&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Merriweather:ital@1&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+ 
+}
+.top{
+    width: 100%;
+    height: 15vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:	white;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    top: 0;
+    position: sticky;
+    
+}
+
+.logo img{
+    width: 25vh;
+    height: 13vh;
+  
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+nav ul li{
+
+    display: inline-block;
+    list-style-type: none;
+    padding: 30px;
+    
+
+}
+#h{
+    color: rgb(255, 137, 2);
+    border-bottom: 1px solid goldenrod;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(57, 50, 12);
+    letter-spacing: 1px;
+    transition: .3s ease-in;
+}
+nav ul li a:hover{
+    color: rgb(91, 66, 5);
+    border-bottom: 1px solid goldenrod;
+}
+span{
+    color: rgb(255, 149, 0);
+    font-family: 'Dancing Script', cursive;;
+    animation: blink 1.5s infinite linear;
+    letter-spacing: 2px;
+  
+}
+@keyframes blink{
+    0%{
+        color: rgb(255, 232, 174);
+    }
+    25%{
+    color: rgb(163, 126, 30);
+    }
+    75%{
+        color: rgb(143, 114, 41);
+    }
+    100%{
+        color: rgb(255, 195, 44);
+    }
+}
+.btn{
+    width: 130px;
+    height: 30px;
+    padding: 0px;
+    font-size: 15px;
+    background-color: rgb(189, 171, 65);
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+
+    color: white;
+
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+    color: rgb(111, 80, 6);
+    background-color: rgb(157, 138, 34);
+    transform: scale(1.1);
+    color: white;
+}
+
+.row{
+
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.col{
+  
+    width: 80vh;
+    height: 85vh;
+    
+}
+#col1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: serif;
+}
+#col1 h3{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+#col1 h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+#col1 h2{
+    letter-spacing: 5px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+#book{
+    width: 14vh;
+    height: 5vh;
+    background-color: #c9c23d;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#book:hover{
+    color: white;
+    background-color: rgb(208, 182, 35);
+}
+#col2{
+    background-image: url('r1.avif');
+    background-position: center;
+    background-size: cover;
+    width: 100vh;
+
+    animation: change 10s infinite linear;
+}
+
+@keyframes change{
+    0%{
+        background-image: url('r1.avif');
+    }
+    35%{
+        background-image: url('ra.avif');
+    }
+        70% {
+            background-image: url('rb.avif');
+        }
+                
+}
+#col3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40vh;
+   background-color: rgb(250, 247, 247);
+    
+}
+#col3 h1{
+    font-size: 30px;
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+}
+#col3 p{
+    padding: 20px;
+    color: black;
+}
+.add{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 20px;
+    
+}
+.add:hover{
+    font-weight: bolder;
+    background-color: rgb(243, 232, 232);
+}
+.add img{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+   
+}
+
+.add h3{
+    margin-left: 10px;
+    font-size: small;
+    
+}
+.add h3:hover{
+    cursor: pointer;
+
+}
+
+.main{
+    width: 100%;
+    height: 600vh;
+    border: 2px solid black;
+}
+.m1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.butt{
+    margin-top: 10px;
+    width: 20vh;
+    height: 6vh;
+    
+    background-color: rgb(220, 199, 77);
+    border: none;
+}
+.m2{
+    width: 100%;
+    height: 30vh;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m2-left{
+    width: 45%;
+    height: 30vh;
+    
+}
+.m2-left h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(9, 72, 9);
+}
+.m2-right{
+    width: 45%;
+    height: 30vh;
+ 
+    line-height: 30px;
+    letter-spacing: .5px;
+    padding: 10px 15px;
+}
+.m2-right li{
+  list-style-type: none;
+    margin-top: 10px;
+}
+.m2-right li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+    font-size: 20px;
+  
+}
+.m3{
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    background-color: #fff;
+    top: 0;
+    position: sticky;
+}
+.m3 ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.m3 ul li a{
+    text-decoration: none;
+    color: rgb(39, 123, 39);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.m3 ul li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.m4{
+    width: 100%;
+    height: 80vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.m4 img{
+   
+    width: 80vh;
+    height: 70vh;
+    margin-left: 20px;
+}
+.m5{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    border: 2px solid red;
+    background-color:white;
+}
+
+.box{
+    border: 1px solid black;
+    width: 60vh;
+    height: 35vh;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(234, 236, 236);
+    border: none;
+   
+}
+
+.carda{
+    margin-left: 10px;
+}
+.box h2{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.box h2, h4{
+    color: black;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#b1{
+    background-image: url('b1.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#b2 {
+    background-image: url('b2.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b3 {
+    background-image: url('b3.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b4 {
+    background-image: url('b4.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b5 {
+    background-image: url('b5.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b6 {
+    background-image: url('b6.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b7 {
+    background-image: url('b7.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b8 {
+    background-image: url('b8.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b9 {
+    background-image: url('b9.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b10 {
+    background-image: url('b10.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b11 {
+    background-image: url('b11.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#b12 {
+    background-image: url('b12.avif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
